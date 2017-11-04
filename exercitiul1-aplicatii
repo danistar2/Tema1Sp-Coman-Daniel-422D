@@ -1,0 +1,5 @@
+a=(0:0.1:2) %creeaza vectorul a
+length(a) %aflam lungimea lui a. vectorul coloana trebuie sa aiba un numar de elemente = lungimea lui a
+b=ones(length(a),1) %creeaza vectorul b
+out1=a*b  
+out2=b.*a %folosim " .* " pentru a inmulti cei doi vectori element cu element .cei doi vectori trebuie sa aiba acelasi nr de coloane pt a putea face asta!
