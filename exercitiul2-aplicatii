@@ -1,0 +1,9 @@
+a=randn(1,10)
+for i=1:length(a)%se vor varifica toate elementele vectorului
+    if a(i)>0 %conditia ca un element sa fie pozitiv
+        out(i)=a(i)%va introduce elementele pozitive in alt vecotr 
+    end
+    for i=1:length(out) 
+        out(i) %afiseaza element cu element vectorul ce contine valorile pozitive din a
+    end
+end
