@@ -1,0 +1,35 @@
+t=0:0.002:10; %rezolutia temporala de 0.002
+s=sin(2*pi*1/4*t); %generez semnalul sinusoidal cu omega = 2pi*1/t
+for i=1:length(s) 
+    if (s(i)<0) 
+        s(i)=s(i)*(-1); %redresarea dublu-alternanta
+        %se raealizeaza prin transformarea tuturor componentelor negative
+        %in componente pozitive  
+    end
+end
+figure(1)
+plot(t,s)
+
+t=0:0.02:10; %rezolutia temporala de 0.02
+s=sin(2*pi*1/4*t); %generez semnalul sinusoidal cu omega = 2pi*1/t
+for i=1:length(s)  
+    if (s(i)<0) 
+        s(i)=s(i)*(-1); %redresarea dublu-alternanta
+        %se raealizeaza prin transformarea tuturor componentelor negative
+        %in componente pozitive  
+    end
+end
+figure(2)
+plot(t,s) %afisez semnalul
+
+t=0:0.2:10; %rezolutia temporala de 0.2
+s=sin(2*pi*1/4*t);%generez semnalul sinusoidal cu omega = 2pi*1/t
+for i=1:length(s)  
+    if (s(i)<0) 
+        s(i)=s(i)*(-1);%redresarea dublu-alternanta
+        %se raealizeaza prin transformarea tuturor componentelor negative
+        %in componente pozitive  
+    end
+end
+figure(3)
+plot(t,s) %afisez semnalul
