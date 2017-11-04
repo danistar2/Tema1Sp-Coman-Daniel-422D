@@ -1,0 +1,30 @@
+%punctul a
+z=[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]   %vectorul cu 21 elemente,elementul nr. 6 fiind 0
+length(z) %verificam lungimea vectorului z, impusa ca fiind 21
+n=0:20 %declaram n si m conform cerintei
+m=-5:15
+figure(1)%marcheaza minifereastra nr.1
+subplot(2,2,1) %imparte spatiul respectiv in 2x2 adica cate doua grafice pe fiecare dintre cele doua linii
+stem(n,z)
+subplot(2,2,2)
+stem(m,z)
+
+%punctul b
+t=abs(10-n) %functia abs inseamna modul
+figure(2) %marcheaza minifereastra nr.2
+stem(n,t)
+
+%punctul c
+n=-15:25 %declaram noul interval pentru n
+x1=sin(pi*n/17) %declaram semnalul x
+figure(3)
+stem(n,x1) %se afiseaza x1 in functie de n intr-un grafic
+hold on %se pastreaza acelasi grafic si pentru x2
+p=0:50
+x2=(pi*p/sqrt(23)) %semnalul x2
+stem(p,x2)   %afisam x2 in functie de p in acelasi grafic
+figure(4)
+subplot(2,1,1)
+stem(n,x1)   %afisam x1 in functie de n si x2 in functie de p intr-o singura fereastra, ca in cerinta
+subplot(2,1,2)
+stem(p,x2)
