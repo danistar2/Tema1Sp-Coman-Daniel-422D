@@ -1,0 +1,45 @@
+%pentru rezolutia temporara de 2ms
+t =0:0.002:10;%setam pasul la 2 milisecunde si intervalul 0-10
+x =1.5*sawtooth(2*pi*0.2*t)-0.5; %functia sawtooth genereaza un semnal triunghiular.
+%am pus componenta continua 1.5 si am scazut 0.5 astfel semnalul sa se
+%incadreze in intervalul impus [-2,1].valorile au fost gasite prin
+%incercari
+figure(1)
+plot(t,x)%functioa plot permite afisarea semnalului
+axis([0 10 -2 1])%folosind functia axis setam ca parametrii valoarea initiala, valoarea finala a domeniului timp
+                     %amplitudinea negativa minima,amplitudinea pozitiva
+                     %maxima
+xlabel('Seconds'); %marcam fiecare axa cu ce reprezinta
+ylabel('Amplitude');
+
+%pentru rezolutia temporara de 20ms
+t =0:0.02:10;%setam pasul la 20 milisecunde si intervalul 0-10
+y =1.5*sawtooth(2*pi*0.2*t)-0.5; %functia square genereaza un semnal triunghiular
+%am pus componenta continua 1.5 si am scazut 0.5 astfel semnalul sa se
+%incadreze in intervalul impus [-2,1].valorile au fost gasite prin
+%incercari
+
+figure(2)
+plot(t,y)           %functioa plot permite afisarea semnalului
+axis([0 10 -2 1]) %folosind functia axis setam ca parametrii valoarea initiala, valoarea finala a domeniului timp
+                     %amplitudinea negativa minima,amplitudinea pozitiva
+                     %maxima                    
+
+xlabel('Seconds'); %marcam fiecare axa cu ce reprezinta
+ylabel('Amplitude');
+
+%pentru rezolutia temporara de 200ms
+t = 0:0.2:10;%setam pasul la 200 milisecunde si intervalul 0-10
+z = 1.5*sawtooth(2*pi*0.2*t)-0.5; %functia square genereaza un semnal triunghiular
+%am pus componenta continua 1.5 si am scazut 0.5 astfel semnalul sa se
+%incadreze in intervalul impus [-2,1].valorile au fost gasite prin
+%incercari
+
+figure(3)
+plot(t,z)
+axis([0 10 -2 1])
+%folosind functia axis setam ca parametrii valoarea initiala, valoarea finala a domeniului timp
+                     %amplitudinea negativa minima,amplitudinea pozitiva
+                     %maxima
+xlabel('Seconds'); %marcam fiecare axa cu ce reprezinta
+ylabel('Amplitude');
