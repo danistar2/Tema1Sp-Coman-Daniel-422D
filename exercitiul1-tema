@@ -1,0 +1,36 @@
+%pentru rezolutia temporara de 2ms
+t = 0:0.002:10;%setam pasul la 2 milisecunde si intervalul 0-10
+x = 1.5*square(2*pi*0.5*t,25); %functia square genereaza un semnal dreptunghiular. parametrul pus dupa virgula reprezinta factorul de umplere
+figure(1)
+plot(t,x)%functioa plot permite afisarea semnalului
+axis([0 10 -1 0.5]) %folosind functia axes setam ca parametrii valoarea initiala, valoarea finala a domeniului timp
+                     %amplitudinea negativa minima,amplitudinea pozitiva
+                     %maxima
+xlabel('Seconds'); %marcam fiecare axa cu ce reprezinta
+ylabel('Amplitude');
+
+%pentru rezolutia temporara de 20ms
+t = 0:0.02:10;%setam pasul la 20 milisecunde si intervalul 0-10
+y = square(2*pi*0.5*t,25); %functia square genereaza un semnal dreptunghiular. parametrul pus dupa virgula reprezinta factorul de umplere
+axis([0 10 -1 0.5])%folosind functia axes setam ca parametrii valoarea initiala, valoarea finala a domeniului timp
+                     %amplitudinea negativa minima,amplitudinea pozitiva
+                     %maxima
+                  
+figure(2)
+plot(t,y) %functioa plot permite afisarea semnalului
+axis([0 10 -1 0.5])%folosind functia axes setam ca parametrii valoarea initiala, valoarea finala a domeniului timp
+                     %amplitudinea negativa minima,amplitudinea pozitiva
+                     %maxima
+xlabel('Seconds'); %marcam fiecare axa cu ce reprezinta
+ylabel('Amplitude');
+
+%pentru rezolutia temporara de 200ms
+t = 0:0.2:10;%setam pasul la 200 milisecunde si intervalul 0-10
+z = square(2*pi*0.5*t,25); %functia square genereaza un semnal dreptunghiular. parametrul pus dupa virgula reprezinta factorul de umplere
+figure(3)
+plot(t,z) %functioa plot permite afisarea semnalului
+axis([0 10 -1 0.5])%folosind functia axes setam ca parametrii valoarea initiala, valoarea finala a domeniului timp
+                     %amplitudinea negativa minima,amplitudinea pozitiva
+                     %maxima
+xlabel('Seconds'); %marcam fiecare axa cu ce reprezinta
+ylabel('Amplitude');
