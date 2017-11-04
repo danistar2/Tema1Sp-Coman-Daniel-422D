@@ -1,0 +1,10 @@
+
+function[out1,out2,out3] = functie(a) %functia se numeste "functie
+for ii=1:length(a)
+    out1=sum(real(a))/length(a); %out1 primeste ca valoare media partilor reale ale elementelor complexe din vector
+end
+    out2=a.^2  %out2 este un vector care ia valoarea vectorului initial ridicat la patrat
+    out3=a*(a.') %out3 este o matrice care primeste ca valoare produsul intre vectorul initial si conjugatul sau
+end   %finalul functiei
+
+  
