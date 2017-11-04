@@ -1,0 +1,12 @@
+F=50;
+t=0:0.0002:0.2; %pentru un pas mai mic al lui t, reprezentarea grafica este mai exacta/clara
+s=2*sin(2*pi*F*t);
+plot(t,s,'.-'),xlabel('Timp[s]'), grid
+
+%situatia 1 pasul= 0.001 T=0.02
+%situatia 2 pasul= 0.01 nu se poate masura T pe grafic 
+%situatia 3 pasul= 0.0002 T=0.02
+F1=20;
+c=2*cos(2*pi*F1*t); %semnalul cosinusoidal
+hold on %in cadrul aceluiasi grafic
+plot(t,c)
