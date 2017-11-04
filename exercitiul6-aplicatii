@@ -1,0 +1,11 @@
+N=6
+for i=1:2:N
+    C(i)=randi([0,1]) %se genereaza semnalul binar aleator
+end
+F=1000
+Fs=12000
+figure(1)
+stem(C)
+t=0:0.0005:0.002; %vom reprezenta semnalul in timp
+figure(2)
+plot(t,C)
